@@ -1,0 +1,428 @@
+
+//ELECTRIQUIZ.
+// Por Víctor Zúñiga Peate (54914) y Alberto Sánchez Pérez (54855), del E100.
+
+#include<string.h>
+#include<stdlib.h>
+#include<iostream>
+#include<string>
+#include<fstream>
+using namespace std;
+
+	void lectura1();
+	void lectura2();
+	void lectura3();
+	void lectura4();
+	void lectura5();
+	void lectura6();
+	void lectura7();
+	void lectura8();
+	void lectura9();
+	void lectura10();
+	void lectura11();
+	void lectura12();
+
+
+//-------------------------------------------------------------------------------
+
+//class Pregunta
+//{
+//	private:
+//		string Texto_Preguntas;
+//		string Answer_1;
+//		string Answer_2;
+//		string Answer_3;
+//		string Answer_4;
+//		
+//		int Pregunta_correcta;
+//		int Puntuacion;
+	
+//	public:
+//		void Valores (string, string, string, string, string, int, int);
+//		void Preguntar ();
+//	};
+
+//-------------------------------------------------------------------------------
+
+
+
+int main()
+{
+	
+	int i, j;
+	
+	char aux;
+	char temp [50];	
+	int cont = 0;  //contador a 0
+	system ("pause");
+
+
+
+
+						//INTRO
+//-------------------------------------------------------------------------------
+	
+	cout<< "\t\t  ************************"<<endl;
+	cout<< "\t\t **************************"<<endl;
+	cout<< "\t\t**                        **"<<endl;
+	cout<< "\t\t**        TRIVIAL         **"<<endl;
+	cout<< "\t\t**       Bienvenido!      **"<<endl;
+	cout<< "\t\t**                        **"<<endl;
+	cout<< "\t\t**                        **"<<endl;
+	cout<< "\t\t ************************** "<<endl;
+	cout<< "\t\t  ************************  "<<endl;
+	cout<< endl;
+	
+	cout<< "\t\tPresiona enter para continuar.."<<endl;
+	cin.get();
+	
+	string Nombre;
+	cout<<"\tComo te llamas?\n "<<endl;
+	cin>>Nombre;
+	cout<< endl;
+	string respond;
+		cout<<"\t¿Estas listo para responder las 12 preguntas "<< Nombre<<"?\n "<<endl;
+		cin>>respond;
+		if(respond=="si","Si","SI")
+		{
+			cout<<endl;
+			cout<< "\n\tBuena Suerte!"<<endl;
+			cout<<endl;
+			
+			
+//-----------------------------------------------------------------------
+			
+			char r,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12;
+			
+			lectura1();
+			cout<<"Introduce tu respuesta: ";cin>>r;
+			switch(r){
+			case 'a': cout<<"\n\t\tAcertaste!\n";
+			
+				lectura2();
+				cout<<"\tIntroduce tu respuesta: ";cin>>r2;
+				switch(r2){
+				case 'b': cout<<"\n\t\tAcertaste!\n";
+				
+					lectura3();
+					cout<<"\tIntroduce tu respuesta: ";cin>>r3;
+					switch(r3){
+					case 'a': cout<<"\n\t\tAcertaste!\n";
+						
+						lectura4();
+						cout<<"\tIntroduce tu respuesta: ";cin>>r4;
+						switch(r4){
+						case 'b': cout<<"\n\t\tAcertaste!\n";
+							
+							lectura5();
+							cout<<"\tIntroduce tu respuesta: ";cin>>r5;
+							switch(r5){
+							case 'c': cout<<"\n\t\tAcertaste!\n";
+							
+								lectura6();
+								cout<<"\tIntroduce tu respuesta: ";cin>>r6;
+								switch(r6){
+								case 'd': cout<<"\n\t\tAcertaste!\n";
+							
+									lectura7();
+									cout<<"\tIntroduce tu respuesta: ";cin>>r7;
+									switch(r7){
+									case 'b': cout<<"\n\t\tAcertaste!\n";
+									
+										lectura8();
+										cout<<"\tIntroduce tu respuesta: ";cin>>r8;
+										switch(r8){
+										case 'b': cout<<"\n\t\tAcertaste!\n";
+										
+											lectura9();
+											cout<<"\tIntroduce tu respuesta: ";cin>>r9;
+											switch(r9){
+											case 'c': cout<<"\n\t\tAcertaste!\n";
+											
+												lectura10();
+												cout<<"\tIntroduce tu respuesta: ";cin>>r10;
+												switch(r10){
+												case 'd': cout<<"\n\t\tAcertaste!\n!";
+												
+														lectura11();
+													cout<<"\tIntroduce tu respuesta: ";cin>>r11;
+													switch(r11){
+													case 'a': cout<<"\n\t\tAcertaste!\n";
+														
+															
+														lectura12();
+														cout<<"\tIntroduce tu respuesta: ";cin>>r12;
+														switch(r12){
+														case 'a': cout<<"\n\n\t\t<<GANASTE LA PARTIDA!!,bien hecho joven padawan...>>\n\n";
+														break;
+														return 0;
+														
+														default:cout<<"\n\t\tFallaste :( Suerte para la proxima!";break;
+														return 0;
+														}
+													break;
+													default:cout<<"\n\t\tFallaste :( Suerte para la proxima!";break;
+													return 0;
+													}
+												break;
+												default:cout<<"\n\t\tFallaste :( Suerte para la proxima!";break;
+												return 0;
+												}
+											break;
+											default:cout<<"\n\t\tFallaste :( Suerte para la proxima!";break;
+											return 0;
+											}
+										break;
+										default:cout<<"\n\t\tFallaste :( Suerte para la proxima!";break;
+										return 0;
+										}
+									break;
+									default:cout<<"\n\t\tFallaste :( Suerte para la proxima!";break;
+									return 0;
+									}
+						 		break;
+								default:cout<<"\n\t\tFallaste :( Suerte para la proxima!";break;
+								return 0;
+								}
+							break;
+							default:cout<<"\n\t\tFallaste :( Suerte para la proxima!";break;
+							return 0;
+							}
+						break;
+						default:cout<<"\n\t\tFallaste :( Suerte para la proxima!";break;
+						return 0;
+						}
+					break;
+					default:cout<<"\n\t\tFallaste :( Suerte para la proxima!";break;
+					return 0;
+					}
+			    break;
+				default:cout<<"\n\t\tFallaste :( Suerte para la proxima!";break;
+				return 0;
+				}
+			break;
+			default:cout<<"\n\t\tFallaste :( Suerte para la proxima!";break;
+			return 0;
+			}
+		}else
+		{
+			cout<<":("<<endl;
+		}
+		
+		return 0;
+	}
+
+void lectura1()
+ {
+	ifstream archivo;
+	string texto;
+		
+	archivo.open("pregunta1.txt",ios::in);//Abrimos el archivo en modo lectura
+
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);	}
+	while(!archivo.eof()){
+		getline(archivo,texto);
+		
+		cout<<texto<<endl;
+	}
+	archivo.close();
+	}
+
+void lectura2()
+ {
+	ifstream archivo;
+	string texto;
+		
+	archivo.open("pregunta2.txt",ios::in);//Abrimos el archivo en modo lectura
+
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);	}
+	while(!archivo.eof()){ 
+		getline(archivo,texto);
+		
+		cout<<texto<<endl;
+	}
+	archivo.close();
+	}
+
+void lectura3()
+ {
+	ifstream archivo;
+	string texto;
+		
+	archivo.open("pregunta3.txt",ios::in);//Abrimos el archivo en modo lectura
+
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);	}
+	while(!archivo.eof()){
+		getline(archivo,texto);
+		
+		cout<<texto<<endl;
+	}
+	archivo.close();
+	}
+
+void lectura4()
+ {
+	ifstream archivo;
+	string texto;
+		
+	archivo.open("pregunta4.txt",ios::in);//Abrimos el archivo en modo lectura
+
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);	}
+	while(!archivo.eof()){
+		getline(archivo,texto);
+		
+		cout<<texto<<endl;
+	}
+	archivo.close();
+	}
+
+void lectura5()
+ {
+	ifstream archivo;
+	string texto;
+		
+	archivo.open("pregunta5.txt",ios::in);//Abrimos el archivo en modo lectura
+
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);	}
+	while(!archivo.eof()){
+		getline(archivo,texto);
+		
+		cout<<texto<<endl;
+	}
+	archivo.close();
+	}
+
+void lectura6()
+ {
+	ifstream archivo;
+	string texto;
+		
+	archivo.open("pregunta6.txt",ios::in);//Abrimos el archivo en modo lectura
+
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);	}
+	while(!archivo.eof()){ 
+		getline(archivo,texto);
+		
+		cout<<texto<<endl;
+	}
+	archivo.close();
+	}
+
+void lectura7()
+ {
+	ifstream archivo;
+	string texto;
+		
+	archivo.open("pregunta7.txt",ios::in);//Abrimos el archivo en modo lectura
+
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);	}
+	while(!archivo.eof()){
+		getline(archivo,texto);
+		
+		cout<<texto<<endl;
+	}
+	archivo.close();
+	}
+
+void lectura8()
+ {
+	ifstream archivo;
+	string texto;
+		
+	archivo.open("pregunta8.txt",ios::in);//Abrimos el archivo en modo lectura
+
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);	}
+	while(!archivo.eof()){
+		getline(archivo,texto);
+		
+		cout<<texto<<endl;
+	}
+	archivo.close();
+	}
+void lectura9()
+ {
+	ifstream archivo;
+	string texto;
+		
+	archivo.open("pregunta9.txt",ios::in);//Abrimos el archivo en modo lectura
+
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);	}
+	while(!archivo.eof()){
+		getline(archivo,texto);
+		
+		cout<<texto<<endl;
+	}
+	archivo.close();
+	}
+
+void lectura10()
+ {
+	ifstream archivo;
+	string texto;
+		
+	archivo.open("pregunta10.txt",ios::in);//Abrimos el archivo en modo lectura
+
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);	}
+	while(!archivo.eof()){ 
+		getline(archivo,texto);
+		
+		cout<<texto<<endl;
+	}
+	archivo.close();
+	}
+
+void lectura11()
+ {
+	ifstream archivo;
+	string texto;
+		
+	archivo.open("pregunta11.txt",ios::in);//Abrimos el archivo en modo lectura
+
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);	}
+	while(!archivo.eof()){
+		getline(archivo,texto);
+		
+		cout<<texto<<endl;
+	}
+	archivo.close();
+	}
+
+void lectura12()
+ {
+	ifstream archivo;
+	string texto;
+		
+	archivo.open("pregunta12.txt",ios::in);//Abrimos el archivo en modo lectura
+
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);	}
+	while(!archivo.eof()){
+		getline(archivo,texto);
+		
+		cout<<texto<<endl;
+	}
+	archivo.close();
+	}
