@@ -1,11 +1,8 @@
-# Título del trabajo
+# ELECTRIQUIZ
 
-Descripción breve del proyecto a realizar (2-3 frases).
+Programa de preguntas y respuestas en el que solo gana el que acierta las 12 cuestiones.
+Ha sido realizado buscando cumplir las exigencias propuestas, mediante el trabajo de ficheros sobre todo.
 
 ## Integrantes del equipo
 
-Nombres, apellidos, y usuario GitHub de los integrantes del equipo.
-
-## Objetivos del trabajo
-
-Lista de los objetivos que se persiguen con el trabajo propuesto.
+Alberto Sánchez Pérez (54855, usuario albertosanchezperez) y Victor Zúñiga Peate (54914)
